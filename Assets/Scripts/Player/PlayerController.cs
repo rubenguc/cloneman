@@ -6,14 +6,14 @@ public class PlayerController : MonoBehaviour
 
     [Header("Movement Settings")]
     public float moveSpeed = 5f;
-    public float jumpForce = 10f;
+    public float jumpForce = 13f;
     public LayerMask groundLayer;
 
     [Header("Jump Settings")]
     public float groundCheckDistance = 0.5f;
 
     [Header("Physics Settings")]
-    public float gravity = -15f;
+    public float gravity = -17f;
 
 
 
@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
 
         float appliedGravity = gravity;
         if (verticalVelocity < 0)
-            appliedGravity *= 2f;
+            appliedGravity *= 3f;
 
 
         if (!isGrounded())
