@@ -13,7 +13,7 @@ TagManager:
   - UI
   - Level
   - Ladder
-  - 
+  - Foreground
   - 
   - 
   - 
@@ -43,6 +43,9 @@ TagManager:
     locked: 0
   - name: Ladder
     uniqueID: 392212827
+    locked: 0
+  - name: Foreground
+    uniqueID: 1682447897
     locked: 0
   - name: Player
     uniqueID: 292085669
