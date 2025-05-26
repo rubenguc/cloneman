@@ -8,11 +8,11 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - Level
-  - 
+  - Ladder
   - 
   - 
   - 
@@ -40,6 +40,12 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ladder
+    uniqueID: 392212827
+    locked: 0
+  - name: Player
+    uniqueID: 292085669
     locked: 0
   m_RenderingLayers:
   - Default
