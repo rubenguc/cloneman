@@ -218,12 +218,13 @@ PolygonCollider2D:
       - {x: 242.78682, y: 65.49687}
       - {x: 176.25952, y: 65.732346}
       - {x: 176.28105, y: 30.550068}
-      - {x: 97.516846, y: 30.493038}
-      - {x: 97.50551, y: 0.52108955}
+      - {x: 94.538376, y: 30.817997}
+      - {x: 94.5426, y: 28.870506}
+      - {x: 94.604004, y: 0.5065088}
       - {x: 0.41825002, y: 0.49788645}
       - {x: 0.45588738, y: -13.461721}
-      - {x: 113.553696, y: -13.529776}
-      - {x: 113.56204, y: 17.556404}
+      - {x: 113.670425, y: -13.413135}
+      - {x: 113.5287, y: 17.673042}
   m_UseDelaunayMesh: 0
 --- !u!1 &489460462
 GameObject:
@@ -18924,11 +18925,11 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 34
+  near clip plane: 0.1
+  far clip plane: 5000
+  field of view: 40
   orthographic: 1
-  orthographic size: 4.5
+  orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -18953,7 +18954,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.6200001, z: -7.59}
+  m_LocalPosition: {x: 94.87073, y: 25.61113, z: -7.21}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -19967,32 +19968,32 @@ CompositeCollider2D:
         Y: 69666664
   m_CompositePaths:
     m_Paths:
-    - - {x: 204.03333, y: 62.96667}
-      - {x: 204.03333, y: 71.03333}
-      - {x: 202.96666, y: 71.0333}
-      - {x: 202.96669, y: 62.96667}
-    - - {x: 172.03333, y: 46.966667}
-      - {x: 172.03333, y: 63.033333}
-      - {x: 170.96666, y: 63.0333}
-      - {x: 170.96669, y: 46.966667}
-    - - {x: 184.03333, y: 38.966667}
-      - {x: 184.03333, y: 54.033333}
-      - {x: 182.96666, y: 54.0333}
-      - {x: 182.96669, y: 38.966667}
-    - - {x: 92.0333, y: 22.966667}
-      - {x: 92.0333, y: 31.033335}
-      - {x: 90.96667, y: 31.033306}
-      - {x: 90.966705, y: 22.966667}
-    - - {x: 98.0333, y: 14.966666}
-      - {x: 98.0333, y: 23.033333}
-      - {x: 96.96667, y: 23.033304}
-      - {x: 96.966705, y: 14.966666}
-    - - {x: 104.0333, y: 6.9666667}
-      - {x: 104.0333, y: 19.033333}
-      - {x: 102.96667, y: 19.033304}
-      - {x: 102.966705, y: 6.9666667}
+    - - {x: 204.03334, y: 71.03333}
+      - {x: 202.96666, y: 71.03333}
+      - {x: 202.96666, y: 62.96667}
+      - {x: 204.03334, y: 62.96667}
+    - - {x: 172.03334, y: 63.033333}
+      - {x: 170.96666, y: 63.033333}
+      - {x: 170.96666, y: 46.966667}
+      - {x: 172.03334, y: 46.966667}
+    - - {x: 184.03334, y: 54.033333}
+      - {x: 182.96666, y: 54.033333}
+      - {x: 182.96666, y: 38.966667}
+      - {x: 184.03334, y: 38.966667}
+    - - {x: 92.03333, y: 31.033335}
+      - {x: 90.96667, y: 31.033335}
+      - {x: 90.96667, y: 22.966667}
+      - {x: 92.03333, y: 22.966667}
+    - - {x: 98.03333, y: 23.033333}
+      - {x: 96.96667, y: 23.033333}
+      - {x: 96.96667, y: 14.966666}
+      - {x: 98.03333, y: 14.966666}
+    - - {x: 104.03333, y: 19.033333}
+      - {x: 102.96667, y: 19.033333}
+      - {x: 102.96667, y: 6.9666667}
+      - {x: 104.03333, y: 6.9666667}
   m_VertexDistance: 0.0005
-  m_OffsetDistance: 0.00005
+  m_OffsetDistance: 0
   m_UseDelaunayMesh: 0
   m_CompositeGameObject: {fileID: 687733295}
 --- !u!50 &687733300
@@ -20418,7 +20419,7 @@ MonoBehaviour:
   Priority:
     Enabled: 0
     m_Value: 0
-  OutputChannel: -1
+  OutputChannel: 1
   StandbyUpdate: 2
   m_StreamingVersion: 20241001
   m_LegacyPriority: 0
@@ -20427,10 +20428,10 @@ MonoBehaviour:
     LookAtTarget: {fileID: 0}
     CustomLookAtTarget: 0
   Lens:
-    FieldOfView: 34
-    OrthographicSize: 4.5
-    NearClipPlane: 0.3
-    FarClipPlane: 1000
+    FieldOfView: 40
+    OrthographicSize: 5
+    NearClipPlane: 0.1
+    FarClipPlane: 5000
     Dutch: 0
     ModeOverride: 0
     PhysicalProperties:
@@ -20455,7 +20456,7 @@ Transform:
   m_GameObject: {fileID: 2085595090}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.6200001, z: -7.59}
+  m_LocalPosition: {x: 93.185, y: 25.609999, z: -7.21}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20491,15 +20492,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1875826864020179599, guid: 3cd6e03d4b9584a6a9f8d6768e33ec80, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 93.185
       objectReference: {fileID: 0}
     - target: {fileID: 1875826864020179599, guid: 3cd6e03d4b9584a6a9f8d6768e33ec80, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 23.81
       objectReference: {fileID: 0}
     - target: {fileID: 1875826864020179599, guid: 3cd6e03d4b9584a6a9f8d6768e33ec80, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.41
+      value: 2.79
       objectReference: {fileID: 0}
     - target: {fileID: 1875826864020179599, guid: 3cd6e03d4b9584a6a9f8d6768e33ec80, type: 3}
       propertyPath: m_LocalRotation.w
@@ -20532,6 +20533,14 @@ PrefabInstance:
     - target: {fileID: 2685045582239147547, guid: 3cd6e03d4b9584a6a9f8d6768e33ec80, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5300062300153254676, guid: 3cd6e03d4b9584a6a9f8d6768e33ec80, type: 3}
+      propertyPath: m_Size.x
+      value: 0.1589508
+      objectReference: {fileID: 0}
+    - target: {fileID: 5300062300153254676, guid: 3cd6e03d4b9584a6a9f8d6768e33ec80, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0024960972
       objectReference: {fileID: 0}
     - target: {fileID: 7767454706359200132, guid: 3cd6e03d4b9584a6a9f8d6768e33ec80, type: 3}
       propertyPath: 'fireballs.Array.data[0]'
