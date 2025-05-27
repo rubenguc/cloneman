@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Tilemaps;
 
 public class PlayerController : MonoBehaviour
 {
@@ -32,6 +33,8 @@ public class PlayerController : MonoBehaviour
     public bool isJumpingAttack { get; set; } = false;
     public bool isRunningAttack { get; set; } = false;
 
+    private Vector2 originalColliderSize;
+
     private void Awake()
     {
         body = GetComponent<Rigidbody2D>();
@@ -41,6 +44,8 @@ public class PlayerController : MonoBehaviour
         m_MoveAction = InputSystem.actions.FindAction("Player/Move");
         m_JumpAction = InputSystem.actions.FindAction("Player/Jump");
         m_ShootAction = InputSystem.actions.FindAction("Player/Shoot");
+
+        originalColliderSize = boxCollider.size;
     }
 
     private void Update()
@@ -59,6 +64,7 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("jump_attack", isJumpingAttack);
         anim.SetBool("grounded", isOnGround);
         anim.SetBool("run_attack", isRunningAttack);
+
 
         if (isOnGround) isJumpingAttack = false;
 
@@ -93,6 +99,37 @@ public class PlayerController : MonoBehaviour
 
     private void StartClimbing()
     {
+        boxCollider.size = originalColliderSize * 0.8f;
+
+        Collider2D ladder = Physics2D.OverlapBox(
+         boxCollider.bounds.center,
+         boxCollider.bounds.size,
+         0f,
+         ladderLayer
+     );
+
+        if (ladder != null)
+        {
+            // Buscar el Tilemap asociado a la escalera
+            Tilemap tilemap = ladder.GetComponent<Tilemap>();
+            if (tilemap == null)
+                tilemap = ladder.GetComponentInParent<Tilemap>();
+
+            if (tilemap != null)
+            {
+                // Convertir la posición del jugador a celda del tilemap
+                Vector3 playerWorldPos = transform.position;
+                Vector3Int cellPos = tilemap.WorldToCell(playerWorldPos);
+
+                // Obtener el centro de la celda
+                Vector3 cellCenterWorld = tilemap.GetCellCenterWorld(cellPos);
+
+                // Mover solo en X, mantener Y y Z
+                transform.position = new Vector3(cellCenterWorld.x, playerWorldPos.y, playerWorldPos.z);
+            }
+        }
+
+        anim.SetBool("climbing", true);
         _isClimbing = true;
         body.gravityScale = 0f;
         body.linearVelocity = Vector2.zero;
@@ -100,20 +137,24 @@ public class PlayerController : MonoBehaviour
 
     private void StopClimbing()
     {
+        anim.SetBool("climbing", false);
+        anim.SetBool("climbing_moving", false);
+        boxCollider.size = originalColliderSize;
         _isClimbing = false;
         body.gravityScale = 1f;
     }
 
     private void HandleLadderMovement(float climbInput)
     {
+        
         if (climbInput != 0)
         {
-            // Subir o bajar por la escalera
+             anim.SetBool("climbing_moving", true);
             body.linearVelocity = new Vector2(0, climbInput * climbSpeed);
         }
         else
         {
-            // Mantener posición: no se mueve vertical u horizontalmente
+             anim.SetBool("climbing_moving", false);
             body.linearVelocity = new Vector2(0, 0);
         }
     }
@@ -135,7 +176,7 @@ public class PlayerController : MonoBehaviour
     {
         RaycastHit2D hit = Physics2D.BoxCast(
             boxCollider.bounds.center,
-            new Vector2(0.1f, boxCollider.bounds.size.y),
+            new Vector2(0.2f, boxCollider.bounds.size.y),
             0f,
             Vector2.right * Mathf.Sign(transform.localScale.x),
             ladderCheckDistance,
@@ -159,9 +200,10 @@ public class PlayerController : MonoBehaviour
 
     private bool isGrounded()
     {
+        Vector2 boxSize = new Vector2(boxCollider.bounds.size.x * 0.6f, boxCollider.bounds.size.y);
         RaycastHit2D hit = Physics2D.BoxCast(
             boxCollider.bounds.center,
-            boxCollider.bounds.size,
+            boxSize,
             0f,
             Vector2.down,
             0.1f,
@@ -172,6 +214,8 @@ public class PlayerController : MonoBehaviour
 
     private void FlipSprite(float direction)
     {
+        if (_isClimbing) return;
+
         if (direction != 0 && Mathf.Sign(direction) != Mathf.Sign(transform.localScale.x))
         {
             lastMoveDirection = direction;
@@ -181,6 +225,16 @@ public class PlayerController : MonoBehaviour
                 transform.localScale.z
             );
         }
+    }
+
+    private void OnDrawGizmos()
+    {
+        if (boxCollider == null) return;
+
+        Gizmos.color = Color.red;
+        Vector2 ladderBoxSize = new Vector2(0.2f, boxCollider.bounds.size.y);
+        Vector3 ladderBoxCenter = boxCollider.bounds.center + Vector3.right * Mathf.Sign(transform.localScale.x) * ladderCheckDistance * 0.5f;
+        Gizmos.DrawWireCube(ladderBoxCenter, ladderBoxSize);
     }
 
 
