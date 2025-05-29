@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: c0d7ee927295a4c8f9156a82e891cd57
+guid: 33f97e891c765445dabc18520d21783e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6314514378783426656
-    second: fireball_01_0
+      213: -6515219773401165674
+    second: Dude_Monster_Climb_4_0
+  - first:
+      213: -8185893216420345336
+    second: Dude_Monster_Climb_4_1
+  - first:
+      213: -18153868545361911
+    second: Dude_Monster_Climb_4_2
+  - first:
+      213: 396634918258255795
+    second: Dude_Monster_Climb_4_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +135,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fireball_01_0
+      name: Dude_Monster_Climb_4_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 4
         y: 0
-        width: 120
-        height: 66
+        width: 21
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +150,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0a77483d0a65e58a0800000000000000
-      internalID: -6314514378783426656
+      spriteID: 69092dc922a4595a0800000000000000
+      internalID: -6515219773401165674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dude_Monster_Climb_4_1
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 0
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80a4cf98d7dd56e80800000000000000
+      internalID: -8185893216420345336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dude_Monster_Climb_4_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 0
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 908fd0a17218fbff0800000000000000
+      internalID: -18153868545361911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dude_Monster_Climb_4_3
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 0
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b7ac405b51218500800000000000000
+      internalID: 396634918258255795
       vertices: []
       indices: 
       edges: []
@@ -161,7 +236,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      fireball_01_0: -6314514378783426656
+      Dude_Monster_Climb_4_0: -6515219773401165674
+      Dude_Monster_Climb_4_1: -8185893216420345336
+      Dude_Monster_Climb_4_2: -18153868545361911
+      Dude_Monster_Climb_4_3: 396634918258255795
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

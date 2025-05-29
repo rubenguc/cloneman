@@ -1,10 +1,25 @@
 fileFormatVersion: 2
-guid: c0d7ee927295a4c8f9156a82e891cd57
+guid: 6497f217a8604474e9fe4d25d9bb45bf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6314514378783426656
-    second: fireball_01_0
+      213: 6350452448802780410
+    second: Dude_Monster_Run_6_0
+  - first:
+      213: -8528139597194303457
+    second: Dude_Monster_Run_6_1
+  - first:
+      213: -44119017470293146
+    second: Dude_Monster_Run_6_2
+  - first:
+      213: 2561259159778536049
+    second: Dude_Monster_Run_6_3
+  - first:
+      213: 601316478422015684
+    second: Dude_Monster_Run_6_4
+  - first:
+      213: -3813411338940917255
+    second: Dude_Monster_Run_6_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +141,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fireball_01_0
+      name: Dude_Monster_Run_6_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 6
         y: 0
-        width: 120
-        height: 66
+        width: 21
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +156,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0a77483d0a65e58a0800000000000000
-      internalID: -6314514378783426656
+      spriteID: af436e52bd6512850800000000000000
+      internalID: 6350452448802780410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dude_Monster_Run_6_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 0
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f186a4a6836f5a980800000000000000
+      internalID: -8528139597194303457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dude_Monster_Run_6_2
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 0
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66b08d3ccf1436ff0800000000000000
+      internalID: -44119017470293146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dude_Monster_Run_6_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 0
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17aa05cb2ab6b8320800000000000000
+      internalID: 2561259159778536049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dude_Monster_Run_6_4
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 0
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cedee5b62e485800800000000000000
+      internalID: 601316478422015684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dude_Monster_Run_6_5
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 0
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f9daff679a041bc0800000000000000
+      internalID: -3813411338940917255
       vertices: []
       indices: 
       edges: []
@@ -161,7 +286,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      fireball_01_0: -6314514378783426656
+      Dude_Monster_Run_6_0: 6350452448802780410
+      Dude_Monster_Run_6_1: -8528139597194303457
+      Dude_Monster_Run_6_2: -44119017470293146
+      Dude_Monster_Run_6_3: 2561259159778536049
+      Dude_Monster_Run_6_4: 601316478422015684
+      Dude_Monster_Run_6_5: -3813411338940917255
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

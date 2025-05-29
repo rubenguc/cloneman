@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: c0d7ee927295a4c8f9156a82e891cd57
+guid: 46eb2edd3ce334b339fa693d0884b332
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6314514378783426656
-    second: fireball_01_0
+      213: -314225636306207136
+    second: Dude_Monster_Throw_4_0
+  - first:
+      213: 6208334527300023436
+    second: Dude_Monster_Throw_4_1
+  - first:
+      213: -3037748654745408057
+    second: Dude_Monster_Throw_4_2
+  - first:
+      213: -1383139184236814737
+    second: Dude_Monster_Throw_4_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +135,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fireball_01_0
+      name: Dude_Monster_Throw_4_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 6
         y: 0
-        width: 120
-        height: 66
+        width: 19
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +150,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0a77483d0a65e58a0800000000000000
-      internalID: -6314514378783426656
+      spriteID: 06eb5a8d275a3abf0800000000000000
+      internalID: -314225636306207136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dude_Monster_Throw_4_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 0
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c84b2820c5f682650800000000000000
+      internalID: 6208334527300023436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dude_Monster_Throw_4_2
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 0
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cdaaf471bfb7d5d0800000000000000
+      internalID: -3037748654745408057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dude_Monster_Throw_4_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 0
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6e14a87d3a1ecce0800000000000000
+      internalID: -1383139184236814737
       vertices: []
       indices: 
       edges: []
@@ -161,7 +236,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      fireball_01_0: -6314514378783426656
+      Dude_Monster_Throw_4_0: -314225636306207136
+      Dude_Monster_Throw_4_1: 6208334527300023436
+      Dude_Monster_Throw_4_2: -3037748654745408057
+      Dude_Monster_Throw_4_3: -1383139184236814737
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

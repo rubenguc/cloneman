@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: c0d7ee927295a4c8f9156a82e891cd57
+guid: b55bf1a6837da4ace9049fac3c1d9a99
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6314514378783426656
-    second: fireball_01_0
+      213: 3359735380252721540
+    second: Double_Jump_Dust_5_0
+  - first:
+      213: -1184415678576284504
+    second: Double_Jump_Dust_5_1
+  - first:
+      213: -4889556450717081828
+    second: Double_Jump_Dust_5_2
+  - first:
+      213: -4432581192046208526
+    second: Double_Jump_Dust_5_3
+  - first:
+      213: 7067295244223148483
+    second: Double_Jump_Dust_5_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +138,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fireball_01_0
+      name: Double_Jump_Dust_5_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 120
-        height: 66
+        x: 7
+        y: 3
+        width: 15
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +153,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0a77483d0a65e58a0800000000000000
-      internalID: -6314514378783426656
+      spriteID: 4818647178d20ae20800000000000000
+      internalID: 3359735380252721540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Double_Jump_Dust_5_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 1
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8acae04373c109fe0800000000000000
+      internalID: -1184415678576284504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Double_Jump_Dust_5_2
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1fd9c5605ec42cb0800000000000000
+      internalID: -4889556450717081828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Double_Jump_Dust_5_3
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 0
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f9120204ee4c72c0800000000000000
+      internalID: -4432581192046208526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Double_Jump_Dust_5_4
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 0
+        width: 81
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c17aba9493141260800000000000000
+      internalID: 7067295244223148483
       vertices: []
       indices: 
       edges: []
@@ -161,7 +261,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      fireball_01_0: -6314514378783426656
+      Double_Jump_Dust_5_0: 3359735380252721540
+      Double_Jump_Dust_5_1: -1184415678576284504
+      Double_Jump_Dust_5_2: -4889556450717081828
+      Double_Jump_Dust_5_3: -4432581192046208526
+      Double_Jump_Dust_5_4: 7067295244223148483
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

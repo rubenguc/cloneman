@@ -1,10 +1,25 @@
 fileFormatVersion: 2
-guid: c0d7ee927295a4c8f9156a82e891cd57
+guid: 624930b7008fe42c5a02f5321ad997bb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6314514378783426656
-    second: fireball_01_0
+      213: -3814611876042757650
+    second: Dude_Monster_Attack2_6_0
+  - first:
+      213: 7506755923100396584
+    second: Dude_Monster_Attack2_6_1
+  - first:
+      213: -2609699676031043709
+    second: Dude_Monster_Attack2_6_2
+  - first:
+      213: 5076982136277686007
+    second: Dude_Monster_Attack2_6_3
+  - first:
+      213: -1614119828179999095
+    second: Dude_Monster_Attack2_6_4
+  - first:
+      213: -7148735266954925622
+    second: Dude_Monster_Attack2_6_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +141,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fireball_01_0
+      name: Dude_Monster_Attack2_6_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 6
         y: 0
-        width: 120
-        height: 66
+        width: 19
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +156,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0a77483d0a65e58a0800000000000000
-      internalID: -6314514378783426656
+      spriteID: ee92c7c95b6cf0bc0800000000000000
+      internalID: -3814611876042757650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dude_Monster_Attack2_6_1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 0
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82c65f35dba5d2860800000000000000
+      internalID: 7506755923100396584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dude_Monster_Attack2_6_2
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 0
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 387b7bfa8fb78cbd0800000000000000
+      internalID: -2609699676031043709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dude_Monster_Attack2_6_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 0
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f6d5db9a50157640800000000000000
+      internalID: 5076982136277686007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dude_Monster_Attack2_6_4
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 0
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 986aa68719e7999e0800000000000000
+      internalID: -1614119828179999095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dude_Monster_Attack2_6_5
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 0
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac928db76279acc90800000000000000
+      internalID: -7148735266954925622
       vertices: []
       indices: 
       edges: []
@@ -161,7 +286,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      fireball_01_0: -6314514378783426656
+      Dude_Monster_Attack2_6_0: -3814611876042757650
+      Dude_Monster_Attack2_6_1: 7506755923100396584
+      Dude_Monster_Attack2_6_2: -2609699676031043709
+      Dude_Monster_Attack2_6_3: 5076982136277686007
+      Dude_Monster_Attack2_6_4: -1614119828179999095
+      Dude_Monster_Attack2_6_5: -7148735266954925622
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: c0d7ee927295a4c8f9156a82e891cd57
+guid: 93eb5997af4d14b829f6332f654ce5d2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6314514378783426656
-    second: fireball_01_0
+      213: 8212814697626224067
+    second: Dude_Monster_Idle_4_0
+  - first:
+      213: 9101964261480447885
+    second: Dude_Monster_Idle_4_1
+  - first:
+      213: -6108086381256799122
+    second: Dude_Monster_Idle_4_2
+  - first:
+      213: -3108282994932266067
+    second: Dude_Monster_Idle_4_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +135,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fireball_01_0
+      name: Dude_Monster_Idle_4_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 6
         y: 0
-        width: 120
-        height: 66
+        width: 19
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +150,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0a77483d0a65e58a0800000000000000
-      internalID: -6314514378783426656
+      spriteID: 3c54e124477c9f170800000000000000
+      internalID: 8212814697626224067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dude_Monster_Idle_4_1
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 0
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8fb7d3854ca05e70800000000000000
+      internalID: 9101964261480447885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dude_Monster_Idle_4_2
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 0
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6c89cb5cc7bb3ba0800000000000000
+      internalID: -6108086381256799122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dude_Monster_Idle_4_3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dabcca1a5192dd4d0800000000000000
+      internalID: -3108282994932266067
       vertices: []
       indices: 
       edges: []
@@ -161,7 +236,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      fireball_01_0: -6314514378783426656
+      Dude_Monster_Idle_4_0: 8212814697626224067
+      Dude_Monster_Idle_4_1: 9101964261480447885
+      Dude_Monster_Idle_4_2: -6108086381256799122
+      Dude_Monster_Idle_4_3: -3108282994932266067
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
