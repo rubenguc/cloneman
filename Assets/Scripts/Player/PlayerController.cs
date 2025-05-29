@@ -35,6 +35,9 @@ public class PlayerController : MonoBehaviour
 
     private Vector2 originalColliderSize;
 
+    private bool isNearLadder;
+    private bool isOnGround;
+
     private void Awake()
     {
         body = GetComponent<Rigidbody2D>();
@@ -50,42 +53,55 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        ProcessInput();
+        CheckEnvironment();
+        UpdateAnimatorParameters();
+        HandleClimbingLogic(m_MoveAction.ReadValue<Vector2>().y); // Pass climb input
+        HandleJumpInput();
+        HandleMovementLogic();
+    }
+
+    private void ProcessInput()
+    {
         moveInputX = m_MoveAction.ReadValue<Vector2>().x;
-        float moveDirection = Mathf.Sign(moveInputX);
-        float verticalVelocity = body.linearVelocity.y;
+    }
 
-        Vector2 moveValue = m_MoveAction.ReadValue<Vector2>();
-        float climbInput = moveValue.y;
+    private void CheckEnvironment()
+    {
+        isNearLadder = IsNearLadder();
+        isOnGround = isGrounded();
+    }
 
-        bool isNearLadder = IsNearLadder();
-        bool isOnGround = isGrounded();
-
+    private void UpdateAnimatorParameters()
+    {
         anim.SetBool("run", moveInputX != 0);
         anim.SetBool("jump_attack", isJumpingAttack);
         anim.SetBool("grounded", isOnGround);
         anim.SetBool("run_attack", isRunningAttack);
+    }
 
-
+    private void HandleClimbingLogic(float climbInput)
+    {
         if (isOnGround) isJumpingAttack = false;
-
         if (_isClimbing && (isOnGround || !isNearLadder)) StopClimbing();
-
-        // Verificar si debe comenzar a escalar
         if (isNearLadder && Mathf.Abs(moveInputX) < 0.1f && climbInput > 0.1f) StartClimbing();
+        if (_isClimbing) HandleLadderMovement(climbInput);
+    }
 
-
-        if (_isClimbing)
-        {
-            HandleLadderMovement(climbInput);
-        }
-        else
-        {
-            HandleRegularMovement(moveInputX, verticalVelocity, moveDirection);
-        }
-
-        // Salto solo si está en el suelo
+    private void HandleJumpInput()
+    {
         if (m_JumpAction.WasPressedThisFrame() && isOnGround) Jump();
         if (m_JumpAction.WasReleasedThisFrame() && body.linearVelocity.y > 0) body.linearVelocity = new Vector2(body.linearVelocity.x, body.linearVelocityY / 2);
+    }
+
+    private void HandleMovementLogic()
+    {
+        if (!_isClimbing)
+        {
+            float moveDirection = Mathf.Sign(moveInputX);
+            float verticalVelocity = body.linearVelocity.y;
+            HandleRegularMovement(moveInputX, verticalVelocity, moveDirection);
+        }
 
         FlipSprite(moveInputX);
     }
@@ -110,21 +126,15 @@ public class PlayerController : MonoBehaviour
 
         if (ladder != null)
         {
-            // Buscar el Tilemap asociado a la escalera
             Tilemap tilemap = ladder.GetComponent<Tilemap>();
             if (tilemap == null)
                 tilemap = ladder.GetComponentInParent<Tilemap>();
 
             if (tilemap != null)
             {
-                // Convertir la posición del jugador a celda del tilemap
                 Vector3 playerWorldPos = transform.position;
                 Vector3Int cellPos = tilemap.WorldToCell(playerWorldPos);
-
-                // Obtener el centro de la celda
                 Vector3 cellCenterWorld = tilemap.GetCellCenterWorld(cellPos);
-
-                // Mover solo en X, mantener Y y Z
                 transform.position = new Vector3(cellCenterWorld.x, playerWorldPos.y, playerWorldPos.z);
             }
         }
